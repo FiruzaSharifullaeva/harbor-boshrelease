@@ -25,3 +25,4 @@ if ! grep -q "^docker:" /etc/group; then
   sudo groupadd docker
 fi
 
+echo 1 > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_be_liberal
